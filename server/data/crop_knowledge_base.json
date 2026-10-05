@@ -1,0 +1,183 @@
+{
+  "tomato": {
+    "crop_name": "Tomato",
+
+    "optimal_temp_range_c": [20, 27],
+    "critical_temp_max_c": 32.2,
+    "critical_temp_min_c": 12.7,
+    "chilling_injury_threshold_c": 12.5,
+
+    "frost_sensitive": true,
+    "heat_sensitive": true,
+    "rain_sensitive": false,
+    "waterlogging_sensitive": false,
+
+    "storage_life_days": 10,
+    "storage_temp_range_c": [4.4, 21.0],
+    "perishability": "high",
+
+    "harvest_window_days": 3,
+    "field_lifecycle_days": [60, 100],
+
+    "price_volatility": "high",
+
+    "sell_or_wait_bias": "sell_fast_if_perishable",
+
+    "grading_note": "AGMARK grades: Super A, Super, Fancy, Commercial. Grade A tomatoes (uniform size, deep red, no cracks) command Rs.5-15/kg premium over Grade B.",
+
+    "advisory_note": "Tomatoes suffer irreversible chilling injury below 12.5C, causing failure to ripen, flavor loss, and rapid fungal decay. If a cold snap below this threshold is forecast, advise immediate harvest of mature green and ripening fruit even at low prices, since total crop loss from chilling injury is worse than selling at a depressed price. Blossom drop occurs below 12.7C at night; fruit set fails above 32.2C daytime."
+  },
+
+  "onion": {
+    "crop_name": "Onion",
+
+    "optimal_temp_range_c": [13, 24],
+    "critical_temp_max_c": 30,
+    "critical_temp_min_c": 5,
+    "chilling_injury_threshold_c": null,
+
+    "frost_sensitive": false,
+    "heat_sensitive": false,
+    "rain_sensitive": true,
+    "waterlogging_sensitive": true,
+    "rain_risk_mm_threshold": 15,
+    "critical_growth_stage_dat": [20, 30],
+
+    "storage_life_days": 300,
+    "storage_temp_range_c": [0, 2],
+    "perishability": "low",
+
+    "harvest_window_days": 10,
+    "field_lifecycle_days": [100, 120],
+
+    "price_volatility": "medium",
+
+    "sell_or_wait_bias": "can_wait_for_better_price",
+
+    "grading_note": "Minimum diameter 10mm. Export Grade A: 55mm+ bulbs, dark red, firm. Standard/Medium: 45-60mm. Small (Golta): 30-35mm. Defect tolerance max 6% by weight (2% decay, 2% foreign matter).",
+
+    "advisory_note": "Onions have a shallow root system highly vulnerable to waterlogging, especially during bulb initiation (20-30 days after transplanting), when flooding can cause total crop failure. If continuous heavy rain is forecast during this window, advise clearing drainage channels immediately and consider emergency early harvest if bulbs are near maturity, since waterlogged harvests show sharply higher black mold and sprouting rates. Well-cured, dry-stored onions can be held for months, so farmer can wait for better prices if storage stays dry."
+  },
+
+  "potato": {
+    "crop_name": "Potato",
+
+    "optimal_temp_range_c": [15, 20],
+    "critical_temp_max_c": 26.6,
+    "critical_temp_min_c": 2,
+    "chilling_injury_threshold_c": null,
+
+    "frost_sensitive": true,
+    "heat_sensitive": false,
+    "rain_sensitive": true,
+    "waterlogging_sensitive": true,
+    "rain_risk_mm_threshold": 20,
+
+    "storage_life_days": 180,
+    "storage_temp_by_use_c": {
+      "seed": [2.0, 4.0],
+      "table_fresh": [4.0, 7.0],
+      "processing_chips_fries": [8.0, 10.0]
+    },
+    "perishability": "medium",
+
+    "harvest_window_days": 7,
+    "field_lifecycle_days": [90, 120],
+
+    "price_volatility": "medium",
+
+    "sell_or_wait_bias": "can_wait_for_better_price",
+
+    "grading_note": "Grades: Super, Grade-A, Grade-B. Large/Super: over 65mm diameter. Medium/Grade A: 46-65mm. Small/Grade B: 35-45mm. Processing buyers require 20-25% dry matter content; low dry matter causes excess oil absorption and disintegration when fried.",
+
+    "advisory_note": "Storage temperature determines end-use suitability: table potatoes stored at 4-7C develop cold-induced sweetening (starch converts to sugar) and are unsuitable for processing/frying, which requires warmer 8-10C storage to avoid dark, bitter fries. Do not advise selling cold-stored table potatoes to processing buyers during a price crash in the table market; they will likely be rejected at the processing gate. Table potatoes have roughly a 6-month shelf life, so holding until the table market recovers is often viable. Rain and cool, humid conditions favor late blight; waterlogging during tuber initiation (35-45 days) or bulking (60-75 days) is especially damaging."
+  },
+
+  "cauliflower": {
+    "crop_name": "Cauliflower",
+
+    "optimal_temp_range_c": [15, 20],
+    "critical_temp_max_c": 25,
+    "critical_temp_min_c": 5,
+    "chilling_injury_threshold_c": null,
+
+    "frost_sensitive": false,
+    "heat_sensitive": true,
+    "rain_sensitive": true,
+    "waterlogging_sensitive": false,
+
+    "storage_life_days": 28,
+    "storage_temp_range_c": [0, 2],
+    "perishability": "high",
+
+    "harvest_window_days": 3,
+    "field_lifecycle_days": [70, 70],
+
+    "price_volatility": "high",
+
+    "sell_or_wait_bias": "sell_fast_if_perishable",
+
+    "grading_note": "AGMARK/international classes: Class I and Class II. Curd must be compact, whole, unblemished, minimum 4 inches (10cm) diameter for premium markets. Common defects causing rejection: softness, wet decay, bruising, hollow stems, riciness, green bracts.",
+
+    "advisory_note": "Cauliflower is highly perishable with a very high post-harvest respiration rate; curds hold for only 3-4 weeks even under ideal 0-2C cold storage, so a sell-fast bias is appropriate. Heat or erratic moisture causes premature bolting or buttoning (tiny unsaleable curds), while unseasonal cold during curd formation causes loose, granular 'riciness' texture, both of which downgrade market quality. Rapid pre-cooling immediately after harvest is important to preserve white color and structure."
+  },
+
+  "green chilli": {
+    "crop_name": "Green Chilli",
+
+    "optimal_temp_range_c": [20, 30],
+    "critical_temp_max_c": 35,
+    "critical_temp_min_c": 5,
+    "chilling_injury_threshold_c": 5,
+
+    "frost_sensitive": true,
+    "heat_sensitive": true,
+    "rain_sensitive": true,
+    "waterlogging_sensitive": true,
+    "rain_risk_mm_threshold": 20,
+
+    "storage_life_days": 21,
+    "storage_temp_range_c": [7, 10],
+    "perishability": "high",
+
+    "harvest_window_days": 5,
+    "field_lifecycle_days": [90, 120],
+
+    "price_volatility": "high",
+
+    "sell_or_wait_bias": "sell_fast_if_perishable",
+
+    "grading_note": "Graded by size uniformity, color intensity, shape, and pungency. Grade A export chillies (uniform, bright green, unblemished) fetch Rs.60-90/kg vs Rs.38-55/kg for standard domestic quality. Popular export varieties: G4 (UAE/UK/USA, long shelf life), Bullet (Middle East/Europe retail), Jwala/Teja (South/Southeast Asia, high pungency).",
+
+    "advisory_note": "Green chillies degrade within 3-5 days at ambient temperature, 2-3 weeks under normal refrigeration, but can last up to 45 days under strict export cold chain (7-10C, 90-95% humidity). Storage below 5C causes irreversible chilling injury: water-soaked spots, tissue softening, pitting, and rapid fungal decay upon warming. Erratic watering (drought followed by waterlogging) causes blossom end rot, a black necrotic lesion at the fruit base that makes chillies unsaleable. Do not wash chillies before storage, as this accelerates microbial decay."
+  },
+
+  "brinjal": {
+    "crop_name": "Brinjal",
+
+    "optimal_temp_range_c": [22, 30],
+    "critical_temp_max_c": 35,
+    "critical_temp_min_c": 10,
+    "chilling_injury_threshold_c": 10,
+
+    "frost_sensitive": true,
+    "heat_sensitive": false,
+    "rain_sensitive": false,
+    "waterlogging_sensitive": false,
+
+    "storage_life_days": 14,
+    "storage_temp_range_c": [10, 12.5],
+    "perishability": "high",
+
+    "harvest_window_days": 4,
+    "field_lifecycle_days": [65, 85],
+
+    "price_volatility": "medium",
+
+    "sell_or_wait_bias": "sell_fast_if_perishable",
+
+    "grading_note": "AGMARK/BIS grades: Super, Fancy, Commercial. Premium grade requires taut, glossy, waxy skin; dull or wrinkled skin indicates over-maturity or poor handling and causes downgrading. Must be whole, firm, with calyx and peduncle intact, free of sunspots and bruising.",
+
+    "advisory_note": "Brinjal cannot tolerate standard refrigeration: exposure below 10C, and especially at or below 5C, causes irreversible chilling injury within 6-8 days, including surface bronzing, pitting, browning of seeds/pulp, bitter off-flavors, and heightened susceptibility to fungal decay. Optimal storage is a narrow 10-12.5C band with 90-95% humidity, and even then maximum shelf life is about 14 days, so a sell-fast approach is appropriate. If a cold spell below 10C is forecast and the crop is unharvested or in ordinary storage, advise prompt sale or use rather than holding for better prices."
+  }
+}
